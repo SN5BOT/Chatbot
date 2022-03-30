@@ -4,14 +4,13 @@ import configparser as cfg
 print("Bot started")
 
 def start_command(update,context):
-    update.message.reply_text('Type something to get started!{chat.id}')
+    update.message.reply_text('Type something to get 😂 started!{chat.id}')
 
 def help_command(update, context):
     update.message.reply_text('More help? Find on Google')
 
 def handle_message(update, context):
     text = str(update.message.text).lower()
-    text = str(update.message.chat.id).lower()
     response = res.sample_responses(text)
     update.message.reply_text(response)
 
