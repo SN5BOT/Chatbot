@@ -4,7 +4,7 @@ import configparser as cfg
 print("Bot started")
 
 def start_command(update,context):
-    update.message.reply_text('Type something to get started! 🇺🇲')
+    update.message.reply_text('Type something to get started!')
 
 def help_command(update, context):
     update.message.reply_text('More help? Find on Google')
